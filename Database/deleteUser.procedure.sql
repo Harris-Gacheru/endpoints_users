@@ -1,0 +1,7 @@
+CREATE OR ALTER PROCEDURE deleteUser @id INT
+AS
+BEGIN
+
+DELETE FROM users WHERE userid = @id
+
+END
