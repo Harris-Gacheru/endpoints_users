@@ -6,4 +6,4 @@ SELECT * FROM users WHERE username = @username
 
 END
 
-EXEC searchByUsername @username = 'Lilly'
+-- EXEC searchByUsername @username = 'John'

@@ -6,4 +6,4 @@ SELECT userid, username, fullname, email, age, roles FROM users WHERE userid = @
 
 END
 
-EXEC getUser @id = 1
+-- EXEC getUser @id = 1

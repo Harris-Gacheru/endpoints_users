@@ -6,4 +6,4 @@ SELECT userid, username, fullname, email, age, roles FROM users
 
 END
 
-EXEC getusers
+-- EXEC getusers

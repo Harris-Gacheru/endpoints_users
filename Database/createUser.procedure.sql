@@ -7,4 +7,4 @@ VALUES(@username, @fullname, @email, @age, @roles, @password)
 
 END
 
-EXEC createUser @username = 'xhgafq', @fullname = 'cwdvb beview', @email = 'cwecfwe@mail.com', @age = '22', @roles = 'student', @password = '123456'
+-- EXEC createUser @username = 'xhgafq', @fullname = 'cwdvb beview', @email = 'cwecfwe@mail.com', @age = '22', @roles = 'student', @password = '123456'

@@ -8,4 +8,4 @@ WHERE userid = @id
 
 END
 
-EXEC resetPassword @id = 2, @password = '12345678'
+-- EXEC resetPassword @id = 2, @password = '12345678'

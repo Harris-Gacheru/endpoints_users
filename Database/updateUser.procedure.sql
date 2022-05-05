@@ -8,4 +8,4 @@ WHERE userid = @id
 
 END
 
-EXEC updateUser @id = 1, @username = 'Gacheru', @fullname = 'H Karume', @email = 'g@gmail.com', @age = 21, @roles = 'trainer'
+-- EXEC updateUser @id = 1, @username = 'Gacheru', @fullname = 'H Karume', @email = 'g@gmail.com', @age = 21, @roles = 'trainer'
