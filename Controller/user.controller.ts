@@ -10,7 +10,7 @@ import { LoginSchema } from '../Helpers/loginValidator'
 
 export const createUser: RequestHandler = async(req, res) => {
     try {
-        const { username, fullname, email, age, roles, password } = req.body as { username: string, fullname: string, email: string, age: number, roles: string, password: string }
+        const { username, fullname, email, age, password } = req.body as { username: string, fullname: string, email: string, age: number, password: string }
 
         const { error } = RegisterSchema.validate(req.body)
 
@@ -25,7 +25,6 @@ export const createUser: RequestHandler = async(req, res) => {
             .input('fullname', mssql.VarChar, fullname)
             .input('email', mssql.VarChar, email)
             .input('age', mssql.Int, age)
-            .input('roles', mssql.VarChar, roles)
             .input('password', mssql.VarChar, hashedPassword)
             .execute('createUser')
     

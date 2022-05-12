@@ -23,7 +23,7 @@ const registerValidator_1 = require("../Helpers/registerValidator");
 const loginValidator_1 = require("../Helpers/loginValidator");
 const createUser = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const { username, fullname, email, age, roles, password } = req.body;
+        const { username, fullname, email, age, password } = req.body;
         const { error } = registerValidator_1.RegisterSchema.validate(req.body);
         if (error) {
             return res.json({ Error: error });
@@ -36,7 +36,6 @@ const createUser = (req, res) => __awaiter(void 0, void 0, void 0, function* () 
                 .input('fullname', mssql_1.default.VarChar, fullname)
                 .input('email', mssql_1.default.VarChar, email)
                 .input('age', mssql_1.default.Int, age)
-                .input('roles', mssql_1.default.VarChar, roles)
                 .input('password', mssql_1.default.VarChar, hashedPassword)
                 .execute('createUser');
             res.json({ message: 'User created successfully' });

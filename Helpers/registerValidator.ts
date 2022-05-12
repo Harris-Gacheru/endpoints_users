@@ -5,6 +5,6 @@ export const RegisterSchema = Joi.object({
     fullname: Joi.string().required().max(30), 
     email: Joi.string().required().email(), 
     age: Joi.number().required(), 
-    roles: Joi.string().required(),
+    roles: Joi.string(),
     password: Joi.string().required().min(6).max(30)
 })

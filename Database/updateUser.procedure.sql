@@ -3,7 +3,7 @@ AS
 BEGIN
 
 UPDATE users
-SET username = @username, fullname = @fullname, email = @email, @age = @age, roles = @roles
+SET username = @username, fullname = @fullname, email = @email, age = @age, roles = @roles
 WHERE userid = @id
 
 END

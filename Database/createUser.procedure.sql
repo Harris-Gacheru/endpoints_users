@@ -1,9 +1,9 @@
-CREATE OR ALTER PROCEDURE createUser @username VARCHAR(50), @fullname VARCHAR(50), @email VARCHAR(50), @age INT, @roles VARCHAR(50), @password VARCHAR(300)
+CREATE OR ALTER PROCEDURE createUser @username VARCHAR(50), @fullname VARCHAR(50), @email VARCHAR(50), @age INT, @password VARCHAR(300)
 AS 
 BEGIN
 
-INSERT INTO users(username, fullname, email, age, roles, password)
-VALUES(@username, @fullname, @email, @age, @roles, @password)
+INSERT INTO users(username, fullname, email, age, password)
+VALUES(@username, @fullname, @email, @age, @password)
 
 END
 

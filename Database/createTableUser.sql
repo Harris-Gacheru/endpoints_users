@@ -6,6 +6,6 @@ CREATE TABLE users (
     fullname VARCHAR(50) NOT NULL, 
     email VARCHAR(50) NOT NULL, 
     age INT NOT NULL,
-    roles VARCHAR(50) NOT NULL,
+    roles VARCHAR(50) DEFAULT 'student',
     password VARCHAR(300) NOT NULL
 )
